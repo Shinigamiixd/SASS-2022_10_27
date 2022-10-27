@@ -1,0 +1,19 @@
+@import "variables";
+
+@mixin imageFilter($pr){
+    filter: brightness($pr);
+}
+
+@mixin flexwraplalala {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+@mixin imagelalalala {
+    margin: $image-margin;
+    height: $image-height;
+    border-radius: $border-radius;    
+}

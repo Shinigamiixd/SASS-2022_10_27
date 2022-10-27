@@ -1,0 +1,15 @@
+@import "variables", "mixins";
+
+.container{
+    height: 100vh;
+    @include flexwraplalala;
+
+    img{
+        @include imagelalalala;
+        @include imageFilter(35%);
+        
+        &:hover{
+            @include imageFilter(100%);
+        }
+    }
+}
