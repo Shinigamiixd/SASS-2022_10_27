@@ -1,0 +1,90 @@
+body {
+  height: 100vh;
+  background-color: #5283D9;
+  overflow: hidden;
+}
+
+body .fadeintext {
+  padding-top: 20vh;
+  font-size: 8vw;
+  position: relative;
+  text-align: center;
+  font-weight: bolder;
+  z-index: 1000;
+  margin: 0;
+  opacity: 0;
+  -webkit-animation: fadeintext 1s 2s ease-in forwards;
+          animation: fadeintext 1s 2s ease-in forwards;
+}
+
+@-webkit-keyframes fadeintext {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeintext {
+  100% {
+    opacity: 1;
+  }
+}
+
+body .sun {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  width: 7rem;
+  height: 7rem;
+  background-color: #F7CA18;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 20px 20px #F7CA18;
+          box-shadow: 0px 0px 20px 20px #F7CA18;
+  -webkit-transform: translateX(-10rem);
+          transform: translateX(-10rem);
+  -webkit-animation: sunfade 3s ease-out forwards;
+          animation: sunfade 3s ease-out forwards;
+}
+
+@-webkit-keyframes sunfade {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes sunfade {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+body .textas {
+  font-weight: bolder;
+  margin: 5%;
+  -webkit-animation: slidein 3s;
+          animation: slidein 3s;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin: 5%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin: 5%;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

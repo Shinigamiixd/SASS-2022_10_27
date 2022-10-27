@@ -1,0 +1,62 @@
+@import "variables", "mixins";
+
+body {
+    height: 100vh;
+    background-color: $blue;
+    overflow: hidden;
+
+    .fadeintext {
+        padding-top: 20vh;
+        font-size: 8vw;
+        position: relative;
+        text-align: center;
+        font-weight: bolder;
+        z-index: 1000;
+        margin: 0;
+        opacity: 0;
+        animation: fadeintext 1s 2s ease-in forwards;
+
+        @keyframes fadeintext {
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+
+    .sun {
+        position: absolute;
+        top: 2rem;
+        left: 3rem;
+        width: 7rem;
+        height: 7rem;
+        background-color: $yellow;
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px 20px $yellow;
+        transform: translateX(-10rem);
+        animation: sunfade 3s ease-out forwards;
+
+        @keyframes sunfade {
+            100% {
+                transform: translateX(0);
+            }
+        }
+    }
+
+
+    .textas{
+        font-weight: bolder;
+        margin: 5%;
+        animation: slidein 3s;
+        @keyframes slidein {
+            from{
+                margin-left: 100%;
+                width: 300%;
+            }
+            to{
+                margin: 5%;
+                width: 100%;
+            }
+        }
+    }
+
+}
